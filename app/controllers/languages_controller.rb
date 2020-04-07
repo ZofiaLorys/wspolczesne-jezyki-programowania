@@ -10,4 +10,7 @@ class LanguagesController < ApplicationController
 
   def java
   end
+
+  def main
+  end
 end
