@@ -1,4 +1,15 @@
 Rails.application.routes.draw do
+
+  get 'languages/new'
+
+  get 'languages/edit'
+
+  get 'languages/index', as: 'languages'
+
+  post 'languages/create'
+
+  post 'languages/update'
+
   get 'languages/ruby'
 
   get 'languages/c'
@@ -11,5 +22,7 @@ Rails.application.routes.draw do
 
   root to: "languages#main"
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+    #resources :languages, only: [:index, :update, :new, :create, :edit]
+
+
 end
