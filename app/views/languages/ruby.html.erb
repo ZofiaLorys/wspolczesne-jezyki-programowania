@@ -1,13 +1,57 @@
-
- <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
-      <div class="w-100">
-        <h1 class="mb-0">Współczesne języki
-          <span class="text-primary">programowania</span>
-        </h1>
-        <div class="subheading mb-5">Ruby</div>
-        <p class="lead mb-5">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        
-      </div>
-    </section>
+<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+    <div class="w-100">
+        <div class="mb-5">
+            <h1 class="mb-0">Współczesne języki
+                <span class="text-primary">programowania</span>
+            </h1>
+            <div class="subheading mb-5">Ruby</div>
+            <p class="lead mb-3">
+                Ruby to język spopularyzowany poprzez framework Ruby on Rails, który służy do tworzenia aplikacji webowych. Język cechuje wysokopoziomowość, typowanie dynamiczne, automatyczne zarządzanie pamięcią, obiektowość i prosta składnia. Dzięki tej specyfice Ruby jest uznawany za język o stosunkowo niskim “progu wejścia”. Jest to technologia polecana na pierwszy język programowania, szczególnie dla osób bez wykształcenia typowo informatycznego.
+            </p>
+            <p class="lead mb-3">
+                Wokół Rubiego skupiona jest zróżnicowana społeczność, co jest dużym plusem dla informatycznych mniejszości społecznych (np. kobiet).
+            </p>
+            <fieldset class="border border-primary rounded p-3 mb-3">
+                <legend class="text-primary px-1 mb-0">Z moich obserwacji wynika, że:</legend>
+                <p class="lead mb-0">
+                    Zastosowanie tego języka jest bardziej popularne w software housach i startupach (przy tworzeniu mniejszych i średnich projektów), niż w korporacjach (przy ogromnych aplikacjach). W dużych polskich miastach wiele firm rekrutuje na pozycję Junior Ruby Developer osoby bez doświadczenia komercyjnego. Podczas wakacji można znaleźć staż w tej technologii, aczkolwiek takich staży nie jest dużo. Ruby nie jest językiem nauczanym na polskich uczelniach. To sprawia, że specjaliści tej technologii na początku drogi zawodowej mają mniejszą konkurencję na rynku pracy.
+                </p>
+            </fieldset>
+        </div>
+        <div class="mb-5">
+            <h3>Cechy:</h3>
+            <ul>
+                <li class="lead"><%= render "shared/gear-icon" %>interpretowany</li>
+                <li class="lead"><%= render "shared/gear-icon" %>wysoko poziomowy</li>
+                <li class="lead"><%= render "shared/gear-icon" %>typowany dynamicznie</li>
+                <li class="lead"><%= render "shared/gear-icon" %>pamięć zarządzana automatycznie (garbage collector)</li>
+                <li class="lead"><%= render "shared/gear-icon" %>obiektowy (w Ruby każda wartość jest obiektem)</li>
+                <li class="lead"><%= render "shared/gear-icon" %>stosowany w aplikacjach webowych (framework Ruby on Rails)</li>
+                <li class="lead"><%= render "shared/gear-icon" %>posiadający aktywną społeczność</li>
+                <li class="lead"><%= render "shared/gear-icon" %>wykorzystywany przede wszystkim przez startupy i software housy</li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col">
+                 <h3>Zalety:</h3>
+                <ul>
+                    <li class="lead"><%= render "shared/tick-icon" %>aktywna społeczność</li>
+                    <li class="lead"><%= render "shared/tick-icon" %>rozbudowany ekosystem gotowych rozwiązań</li>
+                    <li class="lead"><%= render "shared/tick-icon" %>elastyczność</li>
+                    <li class="lead"><%= render "shared/tick-icon" %>inspiracja językiem naturalnym</li>
+                    <li class="lead"><%= render "shared/tick-icon" %>szybkość i łatwość w tworzeniu oprogramowania</li>
+                    <li class="lead"><%= render "shared/tick-icon" %>prosta składnia</li>
+                    <li class="lead"><%= render "shared/tick-icon" %>niski próg wejścia</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Wady:</h3>
+                <ul>
+                    <li class="lead"><%= render "shared/cross-icon" %>niska przepustowość</li>
+                    <li class="lead"><%= render "shared/cross-icon" %>długi czas odpowiedzi</li>
+                    <li class="lead"><%= render "shared/cross-icon" %>słabe mechanizmy do programowania współbieżnego</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
