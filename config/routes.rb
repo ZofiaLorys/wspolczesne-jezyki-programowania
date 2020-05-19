@@ -1,5 +1,6 @@
-Rails.application.routes.draw do
+# frozen_string_literal: true
 
+Rails.application.routes.draw do
   get 'languages/new'
 
   get 'languages/edit'
@@ -24,9 +25,7 @@ Rails.application.routes.draw do
 
   get 'languages/info'
 
-  root to: "languages#main"
+  root to: 'languages#main'
 
-    #resources :languages, only: [:index, :update, :new, :create, :edit]
-
-
+  # resources :languages, only: [:index, :update, :new, :create, :edit]
 end

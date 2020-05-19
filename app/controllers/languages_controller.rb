@@ -1,27 +1,21 @@
+# frozen_string_literal: true
+
 class LanguagesController < ApplicationController
-  def ruby
-  end
+  def ruby; end
 
-  def c
-  end
+  def c; end
 
-  def php
-  end
+  def php; end
 
-  def javascript
-  end
+  def javascript; end
 
-  def python
-  end
+  def python; end
 
-  def java
-  end
+  def java; end
 
-  def main
-  end
+  def main; end
 
-  def info
-  end
+  def info; end
 
   def index
     @languages = Language.all.order('created_at DESC')
@@ -29,20 +23,20 @@ class LanguagesController < ApplicationController
   end
 
   def new
-  	@language = Language.new
+    @language = Language.new
   end
 
   def edit
-  	@languages = Language.all.order('created_at DESC')
+    @languages = Language.all.order('created_at DESC')
   end
 
   def create
-      @language = Language.new(language_params)
-      if @language.save
-        redirect_to languages_path
-      else
-        render 'new'
-      end
+    @language = Language.new(language_params)
+    if @language.save
+      redirect_to languages_path
+    else
+      render 'new'
+    end
   end
 
   def update
@@ -57,6 +51,6 @@ class LanguagesController < ApplicationController
   private
 
   def language_params
-  	params.require(:language).permit(:name, :id);
+    params.require(:language).permit(:name, :id)
   end
 end
