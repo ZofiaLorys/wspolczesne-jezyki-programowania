@@ -1,12 +1,58 @@
+<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+    <div class="w-100">
+        <div class="mb-5">
+            <h1 class="mb-0">Współczesne języki
+                <span class="text-primary">programowania</span>
+            </h1>
+            <div class="subheading mb-5">Java</div>
+            <div class="d-flex mb-3">
+                <p class="lead flex-3">
+                  Java jest najpopularniejszym językiem backendowym w polsce. Jest nauczana na kierunkach informatycznych w całym kraju. Jest wykorzystywana w większości lub we wszystkich dużych korporacjach. Ten język na pewno powinny wybrać osoby zainteresowane pisaniem bardzo dużych aplikacji, skomplikowanych systemów bankowych etc. Nie jest to jednak najbardziej przystępny język dla osób, które dopiero zaczynają programować.                 </p>
+                <div class="flex-1 text-center"><%= image_tag("/images/java.png", :alt => "logo", :class => "img-fluid logo") %></div>
+            </div>
 
- <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
-      <div class="w-100">
-        <h1 class="mb-0">Współczesne języki
-          <span class="text-primary">programowania</span>
-        </h1>
-        <div class="subheading mb-5">Java</div>
-        <p class="lead mb-5">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-    </section>
+            <fieldset class="border border-primary rounded p-3 mb-3">
+                <legend class="text-primary px-1 mb-0">Z moich obserwacji wynika, że:</legend>
+                <p class="lead mb-0">
+                    Dla “javowców” firmy w Polsce organizują bardzo wiele staży w każde wakacje, a korporacje regularnie prowadzą rekrutację junior developerów. Spośród technologii backendowych, zdecydowanie najwięcej ofert dla początkujących programistów jest związanych właśnie z Javą.  Osoby uczące się w domu powinny pamiętać, że wysyłając CV na takie stanowiska będą konkurować z studentami informatyki.
+                </p>
+            </fieldset>
+        </div>
+        <div class="mb-5">
+            <h3>Cechy:</h3>
+            <ul class="icon-list">
+                  <li class="lead"><%= render "shared/gear-icon" %>kompilowany przez maszynę wirtualną</li>
+                  <li class="lead"><%= render "shared/gear-icon" %>typowany statycznie</li>
+                  <li class="lead"><%= render "shared/gear-icon" %>silnie ukierunkowana na programowanie obiektowe</li>
+                  <li class="lead"><%= render "shared/gear-icon" %>automatyczne zarządzanie pamięcią</li>
+                  <li class="lead"><%= render "shared/gear-icon" %>zastosowanie</li>
+                  <ul>
+                    <li class="lead">aplikacje webowe</li>
+                    <li class="lead">aplikacje desktopowe</li>
+                    <li class="lead">gry</li>
+                    <li class="lead">aplikacje mobilne</li>
+                    <li class="lead">systemy wbudowane</li>
+                  </ul>
+                </ul>
+        </div>
+        <div class="row">
+            <div class="col">
+                 <h3>Zalety:</h3>
+                <ul class="icon-list">
+                  <li class="lead"><%= render "shared/tick-icon" %>szybkość</li>
+                  <li class="lead"><%= render "shared/tick-icon" %>bardzo dobry stosunek “wysokopoziomowości” języka do jego szybkości</li>
+                  <li class="lead"><%= render "shared/tick-icon" %>wiele wbudowanych bibliotek z gotowymi rozwiązaniami</li>
+                  <li class="lead"><%= render "shared/tick-icon" %>bardzo duża popularność</li>
+                  <li class="lead"><%= render "shared/tick-icon" %>duża i aktywna społeczność</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Wady:</h3>
+                <ul class="icon-list">
+                    <li class="lead"><%= render "shared/cross-icon" %>“rozwlekłość” kodu w porównaniu do języków wyższego poziomu (python, ruby)</li>
+                    <li class="lead"><%= render "shared/cross-icon" %>mniej intuicyjny dla początkujących</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

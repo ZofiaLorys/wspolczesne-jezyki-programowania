@@ -5,13 +5,22 @@ class LanguagesController < ApplicationController
   def c
   end
 
+  def php
+  end
+
   def javascript
+  end
+
+  def python
   end
 
   def java
   end
 
   def main
+  end
+
+  def info
   end
 
   def index

@@ -1,0 +1,55 @@
+<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+    <div class="w-100">
+        <div class="mb-5">
+            <h1 class="mb-0">Współczesne języki
+                <span class="text-primary">programowania</span>
+            </h1>
+            <div class="subheading mb-5">PHP</div>
+            <div class="d-flex mb-3">
+                <p class="lead flex-3">
+                    W PHP napisanych jest ok 75% aplikacji w dzisiejszym internecie. Ta zdecydowana przewaga zapewnia mu bezpieczne miejsce w świecie IT, mimo powstawania nowszych i wygodniejszych narzędzi. PHP stara się nadganiać nowoczesny świat software-developmentu poprzez kolejne wersje, które aktualizują język.
+                </p>
+                <div class="flex-1 text-center"><%= image_tag("/images/php.svg", :alt => "logo", :class => "img-fluid logo") %></div>
+            </div>
+            <p class="lead mb-3">
+                PHP jest językiem wysokopoziomowym i stosunkowo łatwym w nauce dla osoby początkującej, choć trudniejszym i mniej intuicyjnym niż Python czy Ruby.
+            </p>
+
+            <fieldset class="border border-primary rounded p-3 mb-3">
+                <legend class="text-primary px-1 mb-0">Z moich obserwacji wynika, że:</legend>
+                <p class="lead mb-0">
+                    Jest to technologia szeroko wykorzystywana w Polsce i stosunkowo łatwo w niej znaleźć pracę początkującemu programiście. Bardzo wiele osób wchodzi w świat programowania za pomocą platformy Wordpress, na podstawie której nawet z niewielką wiedzą o PHP można zacząć tworzyć aplikacje internetowe. Znajomość Wordpressa i PHP otwiera możliwości znalezienia pracy i wejścia do branży IT.  
+                </p>
+            </fieldset>
+        </div>
+        <div class="mb-5">
+            <h3>Cechy:</h3>
+            <ul class="icon-list">
+                <li class="lead"><%= render "shared/gear-icon" %>interpretowany</li>
+                <li class="lead"><%= render "shared/gear-icon" %>wysoko poziomowy</li>
+                <li class="lead"><%= render "shared/gear-icon" %>typowany dynamicznie</li>
+                <li class="lead"><%= render "shared/gear-icon" %>automatyczne zarządzanie pamięcią</li>
+                <li class="lead"><%= render "shared/gear-icon" %>zastosowanie przede wszystkim w aplikacjach webowych</li>
+                <li class="lead"><%= render "shared/gear-icon" %>75-80% aplikacji webowych jest stworzonych w PHP</li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col">
+                 <h3>Zalety:</h3>
+                <ul class="icon-list">
+                    <li class="lead"><%= render "shared/tick-icon" %>niski próg wejścia</li>
+                    <li class="lead"><%= render "shared/tick-icon" %>dobre frameworki np. Symfony, Laravel</li>
+                    <li class="lead"><%= render "shared/tick-icon" %>wciąż się rozwija i nowe wersje wprowadzają znaczne ulepszenia</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Wady:</h3>
+                <ul class="icon-list">
+                    <li class="lead"><%= render "shared/cross-icon" %>stary język, którego duża popularność w tej chwili wynika bardziej z historii niż z jego zalet</li>
+                    <li class="lead"><%= render "shared/cross-icon" %>dokumentacja ciężka do czytania dla początkujących</li>
+                    <li class="lead"><%= render "shared/cross-icon" %>ograniczone zastosowanie</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

@@ -15,6 +15,16 @@
  */
 @import "bootstrap";
 
+@for $i from 1 through 10 {
+  .flex-#{$i} {
+    flex: #{$i} !important;
+  }
+}
+
+.logo {
+  max-height: 150px;
+}
+
 body {
   font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   padding-top: 54px;
@@ -204,7 +214,7 @@ a:active {
   color: #824027;
 }
 
-ul {
+.icon-list {
   list-style-type: none;
   padding-left: 1rem;
 }

@@ -18,7 +18,11 @@ Rails.application.routes.draw do
 
   get 'languages/java'
 
-  get 'languages/java'
+  get 'languages/python'
+
+  get 'languages/php'
+
+  get 'languages/info'
 
   root to: "languages#main"
 

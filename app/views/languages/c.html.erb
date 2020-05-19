@@ -1,12 +1,57 @@
+<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+    <div class="w-100">
+        <div class="mb-5">
+            <h1 class="mb-0">Współczesne języki
+                <span class="text-primary">programowania</span>
+            </h1>
+            <div class="subheading mb-5">C++</div>
+            <div class="d-flex mb-3">
+                <p class="lead flex-3">
+                  C++ to najbardziej złożony język programowania z tego zestawienia. Nie jest on dobrym wyborem dla osób początkujących, które nie chcą od razu skakać na głęboką wodę. Pisząc w tej technologii musimy obsługiwać typy danych i zarządzanie pamięcią.  Dzięki większej kontroli nad programem wprawny programista uzyskuję lepszą wydajność kodu. 
+                </p>
+                <div class="flex-1 text-center"><%= image_tag("/images/c.svg", :alt => "logo", :class => "img-fluid logo") %></div>
+            </div>
+            <p class="lead mb-3">
+                C++ jest starym ale nadal powszechnie używanym językiem. Napisano w nim  wIele ogromnych projektów, które nadal są utrzymywane.  Jest językiem leżącym najbliżej warstwy fizycznej, dlatego używa się go do pisania systemów wbudowanych.  
+            </p>
 
- <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
-      <div class="w-100">
-        <h1 class="mb-0">Współczesne języki
-          <span class="text-primary">programowania</span>
-        </h1>
-        <div class="subheading mb-5">C++</div>
-        <p class="lead mb-5">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-    </section>
+            <fieldset class="border border-primary rounded p-3 mb-3">
+                <legend class="text-primary px-1 mb-0">Z moich obserwacji wynika, że:</legend>
+                <p class="lead mb-0">
+                  Oferty dla junior C++ developerów regularnie pojawiają się w popularnych wyszukiwarkach pracy.  Wiele mówi się o wypieraniu C++ przez javę, jednak warto pamiętać, że C++ nadal jest najpopularniejszą technologią dla systemów wbudowanych i  gier, a także jest w nim napisanych wiele projektów, które muszą zostać podtrzymane. Z tego wynika, że nieprędko zabraknie w nim pracy. 
+                </p>
+            </fieldset>
+        </div>
+        <div class="mb-5">
+            <h3>Cechy:</h3>
+            <ul class="icon-list">
+              <li class="lead"><%= render "shared/gear-icon" %>kompilowany</li>
+              <li class="lead"><%= render "shared/gear-icon" %>typowany statycznie</li>
+              <li class="lead"><%= render "shared/gear-icon" %>nie-automatyczne zarządzanie pamięcią</li>
+              <li class="lead"><%= render "shared/gear-icon" %>zastosowanie</li>
+            <ul>
+              <li class="lead">systemy wbudowane</li>
+              <li class="lead">gry, silniki gier</li>
+              <li class="lead">aplikacje desktopowe</li>
+              <li class="lead">serwery</li>
+            </ul>
+         </ul>
+        </div>
+        <div class="row">
+            <div class="col">
+                 <h3>Zalety:</h3>
+                <ul class="icon-list">
+                    <li class="lead"><%= render "shared/tick-icon" %>wydajność</li>
+                    <li class="lead"><%= render "shared/tick-icon" %>kontrola nad programem</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Wady:</h3>
+                <ul class="icon-list">
+                    <li class="lead"><%= render "shared/cross-icon" %>duża złożoność języka - utrudnienie dla początkujących</li>
+                    <li class="lead"><%= render "shared/cross-icon" %>w przypadku niektórych zastosowań C++ jest wypierany przez Jave</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

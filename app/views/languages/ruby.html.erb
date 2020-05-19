@@ -5,12 +5,16 @@
                 <span class="text-primary">programowania</span>
             </h1>
             <div class="subheading mb-5">Ruby</div>
-            <p class="lead mb-3">
-                Ruby to język spopularyzowany poprzez framework Ruby on Rails, który służy do tworzenia aplikacji webowych. Język cechuje wysokopoziomowość, typowanie dynamiczne, automatyczne zarządzanie pamięcią, obiektowość i prosta składnia. Dzięki tej specyfice Ruby jest uznawany za język o stosunkowo niskim “progu wejścia”. Jest to technologia polecana na pierwszy język programowania, szczególnie dla osób bez wykształcenia typowo informatycznego.
-            </p>
+            <div class="d-flex mb-3">
+                <p class="lead flex-3">
+                    Ruby to język spopularyzowany poprzez framework Ruby on Rails, który służy do tworzenia aplikacji webowych. Język cechuje wysokopoziomowość, typowanie dynamiczne, automatyczne zarządzanie pamięcią, obiektowość i prosta składnia. Dzięki tej specyfice Ruby jest uznawany za język o stosunkowo niskim “progu wejścia”. Jest to technologia polecana na pierwszy język programowania, szczególnie dla osób bez wykształcenia typowo informatycznego.
+                </p>
+                <div class="flex-1 text-center"><%= image_tag("/images/ruby.svg.png", :alt => "logo", :class => "img-fluid logo") %></div>
+            </div>
             <p class="lead mb-3">
                 Wokół Rubiego skupiona jest zróżnicowana społeczność, co jest dużym plusem dla informatycznych mniejszości społecznych (np. kobiet).
             </p>
+
             <fieldset class="border border-primary rounded p-3 mb-3">
                 <legend class="text-primary px-1 mb-0">Z moich obserwacji wynika, że:</legend>
                 <p class="lead mb-0">
@@ -20,7 +24,7 @@
         </div>
         <div class="mb-5">
             <h3>Cechy:</h3>
-            <ul>
+            <ul class="icon-list">
                 <li class="lead"><%= render "shared/gear-icon" %>interpretowany</li>
                 <li class="lead"><%= render "shared/gear-icon" %>wysoko poziomowy</li>
                 <li class="lead"><%= render "shared/gear-icon" %>typowany dynamicznie</li>
@@ -34,22 +38,23 @@
         <div class="row">
             <div class="col">
                  <h3>Zalety:</h3>
-                <ul>
-                    <li class="lead"><%= render "shared/tick-icon" %>aktywna społeczność</li>
-                    <li class="lead"><%= render "shared/tick-icon" %>rozbudowany ekosystem gotowych rozwiązań</li>
-                    <li class="lead"><%= render "shared/tick-icon" %>elastyczność</li>
-                    <li class="lead"><%= render "shared/tick-icon" %>inspiracja językiem naturalnym</li>
-                    <li class="lead"><%= render "shared/tick-icon" %>szybkość i łatwość w tworzeniu oprogramowania</li>
-                    <li class="lead"><%= render "shared/tick-icon" %>prosta składnia</li>
-                    <li class="lead"><%= render "shared/tick-icon" %>niski próg wejścia</li>
+                <ul class="icon-list">
+                    <li class="lead"><%= render "shared/gear-icon" %>aktywna społeczność</li>
+                    <li class="lead"><%= render "shared/gear-icon" %>rozbudowany ekosystem gotowych rozwiązań</li>
+                    <li class="lead"><%= render "shared/gear-icon" %>elastyczność</li>
+                    <li class="lead"><%= render "shared/gear-icon" %>inspiracja językiem naturalnym</li>
+                    <li class="lead"><%= render "shared/gear-icon" %>szybkość i łatwość w tworzeniu oprogramowania</li>
+                    <li class="lead"><%= render "shared/gear-icon" %>prosta składnia</li>
+                    <li class="lead"><%= render "shared/gear-icon" %>niski próg wejścia</li>
                 </ul>
             </div>
             <div class="col">
                 <h3>Wady:</h3>
-                <ul>
+                <ul class="icon-list">
                     <li class="lead"><%= render "shared/cross-icon" %>niska przepustowość</li>
                     <li class="lead"><%= render "shared/cross-icon" %>długi czas odpowiedzi</li>
                     <li class="lead"><%= render "shared/cross-icon" %>słabe mechanizmy do programowania współbieżnego</li>
+                    <li class="lead"><%= render "shared/cross-icon" %>ograniczone zastosowanie</li>
                 </ul>
             </div>
         </div>

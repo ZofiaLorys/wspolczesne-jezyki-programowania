@@ -2,21 +2,21 @@
  <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
       <div class="w-100">
         <h1>Najbardziej lubiane języki programowania</h1>
-        <%= column_chart(Language.all.map{ |l| [l.name, l.votes] }.to_h, colors: ["#295879", "#84a0b5"]) %>
+        <%= column_chart(Language.all.map{ |l| [l.name, l.votes] }.to_h, colors: ['#0581b1']) %>
 
         <div class="d-flex flex-row justify-content-around pt-5">
           <div class="p-2">
             <h3>Który język lubisz najbardziej?</h3>
             <%= form_tag('/languages/update', method: :post, class: 'form-group d-flex flex-row') do %>
               <%= collection_select(:language, :id, Language.all, :id, :name, {:prompt => 'Wybierz język'}, {:class=>'form-control'}) %>
-              <%= submit_tag "Zagłosuj", class: "btn btn-info mx-1" %>
+              <%= submit_tag "Zagłosuj", class: "btn btn-secondary mx-1" %>
             <% end %>
           </div>
           <div class="p-2">
             <h3>Dodaj język do rankingu</h3>
             <%= form_for @language, url: languages_create_path(@post), html: {class: 'form-group d-flex flex-row'} do |f| %>
               <%= f.text_field :name %><br>
-              <%= f.submit "Dodaj", class: "btn btn-info mx-1"%>
+              <%= f.submit "Dodaj", class: "btn btn-secondary mx-1"%>
             <% end %>
           </div>
         </div>
