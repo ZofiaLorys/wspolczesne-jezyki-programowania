@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+$enable-responsive-font-sizes: true;
 @import "bootstrap";
 
 @for $i from 1 through 10 {
@@ -228,4 +229,16 @@ a:active {
   fill: rgba(189, 92, 56, 0.5);
   transform: scale(1.1);
   margin-right: 0.5rem;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+  
+  .subheading {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
 }

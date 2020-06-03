@@ -4,7 +4,7 @@
         <h1>Najbardziej lubiane języki programowania</h1>
         <%= column_chart(Language.all.map{ |l| [l.name, l.votes] }.to_h, colors: ['#0581b1']) %>
 
-        <div class="d-flex flex-row justify-content-around pt-5">
+        <div class="d-flex flex-column flex-sm-row justify-content-around align-items-start align-items-sm-end pt-5">
           <div class="p-2">
             <h3>Który język lubisz najbardziej?</h3>
             <%= form_tag(languages_update_path, method: :post, class: 'form-group d-flex flex-row') do %>
